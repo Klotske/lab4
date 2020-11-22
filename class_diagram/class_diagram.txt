@@ -1,0 +1,107 @@
+@startuml
+class Item {
+    +  count
+    +  name
+    +  type
+    + __init__()
+}
+
+class Weapon {
+    +  attack_speed
+    +  damage
+    +  mana_consumption
+    +  type
+    +  prefix
+    + __init__()
+    +  __repl__()
+}
+
+class WoodenSword {
+    +  damage
+    +  name
+    +  prefix
+    + __init__()
+}
+
+class Zenith {
+    +  damage
+    +  name
+    +  prefix
+    + __init__()
+}
+
+class TerraBlade {
+    +  damage
+    +  name
+    +  prefix
+    + __init__()
+}
+
+class LastPrism {
+    +  damage
+    +  name
+    +  prefix
+    + __init__()
+}
+
+class Weapon extends Item
+class WoodenSword extends Weapon
+class Zenith extends Weapon
+class TerraBlade extends Weapon
+class LastPrism extends Weapon
+
+class Entity {
+    +  name
+    +  status
+    +  health
+    +  heal_rate
+    +  base_damage
+    + equipped
+    + attack()
+    + check()
+    + equip()
+    + heal()
+    + __repl__()
+}
+
+class Player {
+    + name
+    + health
+    + heal_rate
+    + base_damage
+    + __init__()
+    + __repl__()
+}
+
+class Enemy {
+    + heal_rate
+    + __init__()
+}
+
+class Zombie {
+    + name
+    + health
+    + base_damage
+    + __init__()
+}
+
+class DemonEye {
+    + name
+    + health
+    + base_damage
+    + __init__()
+}
+
+class Harpy {
+    + name
+    + health
+    + base_damage
+    + __init__()
+}
+
+class Player extends Entity
+class Enemy extends Entity
+class Zombie extends Enemy
+class DemonEye extends Enemy
+class Harpy extends Enemy
+@enduml
