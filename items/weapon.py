@@ -8,6 +8,7 @@ class Weapon(item.Item):
     mana_consumption = 0
 
     def __init__(self):
+        super().__init__()
         self.type = "weapon"
 
     def __repr__(self):
@@ -25,6 +26,7 @@ class Weapon(item.Item):
 
 class WoodenSword(Weapon):
     def __init__(self):
+        super().__init__()
         self.name = "Wooden Sword"
         self.prefix = ""
         self.damage = 7
@@ -32,6 +34,7 @@ class WoodenSword(Weapon):
 
 class Zenith(Weapon):
     def __init__(self):
+        super().__init__()
         self.name = "Zenith"
         self.prefix = "Godly"
         self.damage = 190
@@ -39,6 +42,7 @@ class Zenith(Weapon):
 
 class TerraBlade(Weapon):
     def __init__(self):
+        super().__init__()
         self.name = "Zenith"
         self.prefix = "Legendary"
         self.damage = 172
@@ -46,6 +50,7 @@ class TerraBlade(Weapon):
 
 class LastPrism(Weapon):
     def __init__(self):
+        super().__init__()
         self.name = "Last Prism"
         self.prefix = "Demonic"
         self.attack_speed = 10

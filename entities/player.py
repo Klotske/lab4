@@ -3,6 +3,7 @@ from entities import entity
 
 class Player(entity.Entity):
     def __init__(self, name, health=100):
+        super().__init__()
         self.name = name
         self.health = health
         self.heal_rate = 10
